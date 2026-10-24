@@ -1,0 +1,78 @@
+# shinsangaa GitHub Pages / Minimal Mistakes
+# 참고 사이트처럼 카테고리 + 날짜별 기록 + 본문 목차를 제공하는 구성입니다.
+title: "Sang A | Data & AI Study"
+subtitle: "배운 것을 기록하고, 프로젝트로 연결하기"
+description: "Python, 데이터 분석, 머신러닝, 딥러닝, LLM 실습을 날짜별·주제별로 정리한 학습 블로그"
+url: "https://shinsangaa.github.io"
+baseurl: ""
+repository: "shinsangaa/shinsangaa.github.io"
+timezone: Asia/Seoul
+locale: ko-KR
+minimal_mistakes_skin: "default"
+search: true
+search_full_content: true
+markdown: kramdown
+remote_theme: "mmistakes/minimal-mistakes@4.28.0"
+permalink: /:year/:month/:day/:title/
+future: false
+include:
+  - _pages
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - "사용설명서.md"
+  - "수업자료_목록_75건.csv"
+  - tools
+  - "네이버_이관_양식.csv"
+plugins:
+  - jekyll-remote-theme
+  - jekyll-include-cache
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag
+author:
+  name: "shinsangaa"
+  bio: "Python · 데이터 분석 · ML/DL · LLM 학습 기록"
+  location: "South Korea"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/shinsangaa"
+    - label: "Naver Blog"
+      icon: "fas fa-fw fa-pen"
+      url: "https://blog.naver.com/study-review"
+footer:
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/shinsangaa"
+    - label: "Naver Blog"
+      icon: "fas fa-fw fa-pen"
+      url: "https://blog.naver.com/study-review"
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: false
+      share: false
+      related: true
+      toc: true
+      toc_label: "목차"
+      toc_icon: "list"
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+category_archive:
+  type: liquid
+  path: /categories/
+tag_archive:
+  type: liquid
+  path: /tags/

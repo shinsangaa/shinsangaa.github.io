@@ -1,0 +1,13 @@
+main:
+  - title: "홈"
+    url: /
+  - title: "날짜별 학습"
+    url: /timeline/
+  - title: "주제별 정리"
+    url: /topics/
+  - title: "카테고리"
+    url: /categories/
+  - title: "태그"
+    url: /tags/
+  - title: "소개"
+    url: /about/

@@ -1,11 +1,27 @@
-<!DOCTYPE html>
-<html lang='en'>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    안녕하세요 반가워요
-</body>
-</html>
+---
+layout: home
+author_profile: true
+classes: wide
+---
+<div class="study-intro">
+  <p class="study-kicker">LEARNING JOURNAL · PYTHON · DATA · AI</p>
+  <h1>배운 것을 기록하고,<br>프로젝트로 연결합니다.</h1>
+  <p>파이썬 기초부터 데이터 분석, 머신러닝, 딥러닝, LLM까지. 날짜별 수업 기록과 주제별 학습 노트를 함께 정리합니다.</p>
+  <p>
+    <a class="btn btn--primary" href="{{ '/timeline/' | relative_url }}">날짜별 수업 보기</a>
+    <a class="btn btn--light-outline" href="{{ '/topics/' | relative_url }}">주제별 공부 보기</a>
+  </p>
+</div>
+<h2>주제별로 찾아보기</h2>
+<div class="study-grid">
+  <a href="{{ '/topics/#python' | relative_url }}"><strong>01 · Python</strong><span>자료형, 반복문, 함수, 클래스</span></a>
+  <a href="{{ '/topics/#data-analysis' | relative_url }}"><strong>02 · 데이터 분석</strong><span>NumPy, Pandas, 통계, 전처리</span></a>
+  <a href="{{ '/topics/#data-visualization' | relative_url }}"><strong>03 · 시각화</strong><span>Matplotlib, 그래프 읽기</span></a>
+  <a href="{{ '/topics/#machine-learning' | relative_url }}"><strong>04 · 머신러닝</strong><span>회귀, 분류, 앙상블</span></a>
+  <a href="{{ '/topics/#deep-learning' | relative_url }}"><strong>05 · 딥러닝</strong><span>Dense, CNN, RNN, 학습 최적화</span></a>
+  <a href="{{ '/topics/#llm-agent' | relative_url }}"><strong>06 · LLM / AI</strong><span>Transformer, GPT API, 에이전트</span></a>
+  <a href="{{ '/topics/#projects' | relative_url }}"><strong>07 · 프로젝트</strong><span>수업 과제와 응용 프로젝트</span></a>
+  <a href="{{ '/topics/#class-notes' | relative_url }}"><strong>08 · 수업일지</strong><span>2026년 9~10월 날짜순 기록</span></a>
+</div>
+<hr>
+<p class="study-note">안내: 카페 캡처 화면에서 확인한 <strong>게시글 제목</strong>으로 학습 차례를 정리했습니다. 원문 수업자료·네이버 글을 복제한 것은 아니며, 주제 해설은 별도로 작성한 복습용 초안입니다.</p>

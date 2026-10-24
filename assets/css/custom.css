@@ -1,0 +1,14 @@
+/* 사용자 정의 홈 페이지 스타일: Minimal Mistakes 테마 기반 */
+.study-intro {background:linear-gradient(135deg,#f4f7fb,#fafafa);border:1px solid #e5eaf0;border-radius:14px;padding:2rem 1.9rem;margin-bottom:2rem}
+.study-intro h1{font-size:clamp(1.6rem,3.5vw,2.6rem);line-height:1.35;letter-spacing:-.03em;margin-top:.45rem}
+.study-intro>p:not(.study-kicker){color:#48566a;line-height:1.8}
+.study-kicker{font-size:.69rem;letter-spacing:.15em;color:#5378a9;font-weight:800}
+.study-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.65rem;margin:1.2rem 0 1.8rem}
+.study-grid a{display:flex;flex-direction:column;gap:.4rem;padding:1.05rem;border-radius:10px;border:1px solid #e4e7ec;text-decoration:none!important;transition:all .2s}
+.study-grid a:hover{border-color:#789dbf;background:#f6faff;transform:translateY(-1px)}
+.study-grid strong{font-size:.88rem;color:#293b52}
+.study-grid span{font-size:.72rem;color:#64748b}
+.study-note{color:#677486;font-size:.78rem;padding:.85rem 1.1rem;border-left:3px solid #a7bbcc;background:#f7f9fb}
+.topic-list{padding-left:1.2em}
+.topic-list li{margin:.5em 0}
+@media (max-width:620px){.study-grid{grid-template-columns:1fr}.study-intro{padding:1.15rem}}
