@@ -1,4 +1,4 @@
-# Sang A | Data & AI Study
+# Data & AI Study
 
 GitHub Pages 주소: https://shinsangaa.github.io/
 
