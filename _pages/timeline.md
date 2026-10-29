@@ -7,7 +7,26 @@ author_profile: true
 
 수업일이 글 속에 확인되는 기록은 **공부한 날짜**로 묶었습니다. 링크를 누르면 그날의 개인 학습글을 확인할 수 있습니다. 네이버 블로그에 실제로 글을 올린 날짜는 별도로 표시됩니다.
 
-## 날짜별 공부
+## 새로 추가하는 수업일지
+
+2026년 10월 26일 이후 작성하는 `class-notes` 글은 이곳에 자동으로 나타납니다. 기존 9~10월 기록은 아래에서 확인할 수 있습니다.
+
+{% assign recent_study_posts = site.posts | sort: "date" | reverse %}
+{% assign recent_study_count = 0 %}
+{% for post in recent_study_posts %}
+  {% assign post_day = post.date | date: "%Y%m%d" %}
+  {% if post_day >= "20261026" and post.categories contains "class-notes" %}
+- **{{ post.date | date: "%Y.%m.%d" }}** · [{{ post.title | escape }}]({{ post.url | relative_url }})
+    {% assign recent_study_count = recent_study_count | plus: 1 %}
+  {% endif %}
+{% endfor %}
+{% if recent_study_count == 0 %}
+아직 추가된 수업일지가 없습니다.
+{% endif %}
+
+---
+
+## 기존 날짜별 공부 (2026.09~10)
 
 ### 2026.09.21 · [LLM · AI 기초]({{ "/2026/09/21/class-log/" | relative_url }})
 직접 작성한 기록 1편 · <a href="{{ "/2026/09/21/class-log/" | relative_url }}">그날의 노트 보기</a>
