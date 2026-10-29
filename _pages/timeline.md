@@ -1,79 +1,36 @@
 ---
+layout: single
 title: "날짜별 학습 기록"
 permalink: /timeline/
-layout: single
 author_profile: true
+classes: wide
 ---
 
-수업일이 글 속에 확인되는 기록은 **공부한 날짜**로 묶었습니다. 링크를 누르면 그날의 개인 학습글을 확인할 수 있습니다. 네이버 블로그에 실제로 글을 올린 날짜는 별도로 표시됩니다.
+공부한 날짜를 기준으로 **오래된 기록부터** 정리했습니다. 날짜 또는 글 제목을 클릭하면 해당 학습 노트가 열립니다.
 
-## 새로 추가하는 수업일지
-
-2026년 10월 26일 이후 작성하는 `class-notes` 글은 이곳에 자동으로 나타납니다. 기존 9~10월 기록은 아래에서 확인할 수 있습니다.
-
-{% assign recent_study_posts = site.posts | sort: "date" | reverse %}
-{% assign recent_study_count = 0 %}
-{% for post in recent_study_posts %}
+<ul style="list-style:none; padding-left:0; margin-left:0;">
+{% assign study_days = site.pages | where_exp: "item", "item.study_day" | sort: "study_day" %}
+{% for entry in study_days %}
+  {% unless entry.study_day == "2026-09-26" %}
+    {% assign title_prefix = entry.study_day | append: " · " %}
+    {% assign display_title = entry.title | remove_first: title_prefix %}
+    <li style="display:flex;flex-wrap:wrap;gap:.3rem 1.1rem;align-items:baseline;padding:.9rem 0;border-bottom:1px solid #e7ebf0;">
+      <time style="font-weight:700;min-width:7rem;white-space:nowrap;" datetime="{{ entry.study_day }}">{{ entry.study_day | date: "%Y.%m.%d" }}</time>
+      <a style="flex:1;min-width:15rem;" href="{{ entry.url | relative_url }}">{{ display_title | escape }}</a>
+    </li>
+  {% endunless %}
+{% endfor %}
+{% assign newest_posts = site.posts | sort: "date" %}
+{% for post in newest_posts %}
   {% assign post_day = post.date | date: "%Y%m%d" %}
   {% if post_day >= "20261026" and post.categories contains "class-notes" %}
-- **{{ post.date | date: "%Y.%m.%d" }}** · [{{ post.title | escape }}]({{ post.url | relative_url }})
-    {% assign recent_study_count = recent_study_count | plus: 1 %}
+    {% assign original_date = post.date | date: "%Y-%m-%d" %}
+    {% assign post_title_prefix = original_date | append: " | " %}
+    {% assign display_title = post.title | remove_first: post_title_prefix %}
+    <li style="display:flex;flex-wrap:wrap;gap:.3rem 1.1rem;align-items:baseline;padding:.9rem 0;border-bottom:1px solid #e7ebf0;">
+      <time style="font-weight:700;min-width:7rem;white-space:nowrap;" datetime="{{ original_date }}">{{ post.date | date: "%Y.%m.%d" }}</time>
+      <a style="flex:1;min-width:15rem;" href="{{ post.url | relative_url }}">{{ display_title | escape }}</a>
+    </li>
   {% endif %}
 {% endfor %}
-{% if recent_study_count == 0 %}
-아직 추가된 수업일지가 없습니다.
-{% endif %}
-
----
-
-## 기존 날짜별 공부 (2026.09~10)
-
-### 2026.09.21 · [LLM · AI 기초]({{ "/2026/09/21/class-log/" | relative_url }})
-직접 작성한 기록 1편 · <a href="{{ "/2026/09/21/class-log/" | relative_url }}">그날의 노트 보기</a>
-
-### 2026.09.22 · [GPT API · 환경 설정]({{ "/2026/09/22/class-log/" | relative_url }})
-직접 작성한 기록 1편 · <a href="{{ "/2026/09/22/class-log/" | relative_url }}">그날의 노트 보기</a>
-
-### 2026.09.23 · [프롬프팅 · 챗봇]({{ "/2026/09/23/class-log/" | relative_url }})
-직접 작성한 기록 1편 · <a href="{{ "/2026/09/23/class-log/" | relative_url }}">그날의 노트 보기</a>
-
-### 2026.09.28 · [파이썬 자료형 · 리스트 컴프리헨션]({{ "/2026/09/28/class-log/" | relative_url }})
-직접 작성한 기록 1편 · <a href="{{ "/2026/09/28/class-log/" | relative_url }}">그날의 노트 보기</a>
-
-### 2026.09.29 · [Python 실습 · 파일 입출력]({{ "/2026/09/29/class-log/" | relative_url }})
-직접 작성한 기록 2편 · <a href="{{ "/2026/09/29/class-log/" | relative_url }}">그날의 노트 보기</a>
-
-### 2026.09.30 · [모듈 · 클래스]({{ "/2026/09/30/class-log/" | relative_url }})
-직접 작성한 기록 1편 · <a href="{{ "/2026/09/30/class-log/" | relative_url }}">그날의 노트 보기</a>
-
-### 2026.10.01 · [Pandas · NumPy · Matplotlib]({{ "/2026/10/01/class-log/" | relative_url }})
-직접 작성한 기록 1편 · <a href="{{ "/2026/10/01/class-log/" | relative_url }}">그날의 노트 보기</a>
-
-### 2026.10.02 · [시각화 · 프로젝트 로드맵]({{ "/2026/10/02/class-log/" | relative_url }})
-직접 작성한 기록 1편 · <a href="{{ "/2026/10/02/class-log/" | relative_url }}">그날의 노트 보기</a>
-
-### 2026.10.06 · [머신러닝 수업 · 메모]({{ "/2026/10/06/class-log/" | relative_url }})
-직접 작성한 기록 2편 · <a href="{{ "/2026/10/06/class-log/" | relative_url }}">그날의 노트 보기</a>
-
-### 2026.10.07 · [머신러닝 · 복습 키워드]({{ "/2026/10/07/class-log/" | relative_url }})
-직접 작성한 기록 2편 · <a href="{{ "/2026/10/07/class-log/" | relative_url }}">그날의 노트 보기</a>
-
-### 2026.10.08 · [머신러닝 보강 · 아이디어]({{ "/2026/10/08/class-log/" | relative_url }})
-직접 작성한 기록 2편 · <a href="{{ "/2026/10/08/class-log/" | relative_url }}">그날의 노트 보기</a>
-
-### 2026.10.12 · [CNN · GAN]({{ "/2026/10/12/class-log/" | relative_url }})
-직접 작성한 기록 1편 · <a href="{{ "/2026/10/12/class-log/" | relative_url }}">그날의 노트 보기</a>
-
----
-
-<details>
-<summary><strong>작성일 기준 전체 글 펼쳐보기</strong> (네이버에서 옮긴 공개 글)</summary>
-<ul>
-{% assign all_posts = site.posts | sort: "date" %}
-{% for post in all_posts %}
-<li>{{ post.date | date: "%Y.%m.%d" }} · <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></li>
-{% endfor %}
 </ul>
-</details>
-
-공부한 날짜가 확인되지 않은 글은 위의 **작성일 기준 전체 글**에서 찾아볼 수 있습니다.
