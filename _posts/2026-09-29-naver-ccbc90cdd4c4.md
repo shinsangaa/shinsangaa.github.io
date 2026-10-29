@@ -2,8 +2,8 @@
 layout: single
 title: "csv Lib 라이브러리"
 date: "2026-09-29 15:00:00 +0900"
-categories: [class-notes]
-tags: ["네이버이관"]
+categories: [data-analysis]
+tags: ["데이터분석"]
 toc: true
 ---
 

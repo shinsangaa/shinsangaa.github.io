@@ -2,8 +2,8 @@
 layout: single
 title: "260929 OpenAI 최신 AI 모델 GPT-6.1 아스트라 출시"
 date: "2026-09-30 15:00:00 +0900"
-categories: [llm-agent]
-tags: ["네이버이관"]
+categories: [reading]
+tags: ["읽을거리"]
 toc: true
 ---
 

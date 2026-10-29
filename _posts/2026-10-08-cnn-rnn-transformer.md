@@ -11,6 +11,7 @@ tags:
 - Transformer
 series: 주제별 복습
 excerpt: CNN·RNN·LSTM·Transformer를 한 번에 비교 핵심 개념을 예제로 정리한 학습 노트입니다.
+published: false
 ---
 
 > **원문 이관 상태:** 기존 네이버 블로그 글을 복사한 것이 아니라, 교수님 카페의 **자료 제목을 참고해 새로 작성한 복습용 설명**입니다. 네이버 원문과 본인 실습 코드를 확인한 뒤 보완하세요.

@@ -2,8 +2,8 @@
 layout: single
 title: "261006"
 date: "2026-10-06 15:00:00 +0900"
-categories: [class-notes]
-tags: ["네이버이관"]
+categories: [study-notes]
+tags: ["수업메모"]
 toc: true
 ---
 
