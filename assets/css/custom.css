@@ -12,3 +12,5 @@
 .topic-list{padding-left:1.2em}
 .topic-list li{margin:.5em 0}
 @media (max-width:620px){.study-grid{grid-template-columns:1fr}.study-intro{padding:1.15rem}}
+.topic-list a,.topic-list a:visited,.timeline-list a,.timeline-list a:visited{color:#222!important;text-decoration:none!important}
+.topic-list a:hover,.timeline-list a:hover{color:#5378a9!important}
