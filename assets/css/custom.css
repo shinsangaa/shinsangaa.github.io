@@ -9,8 +9,8 @@
 .study-grid strong{font-size:.88rem;color:#293b52}
 .study-grid span{font-size:.72rem;color:#64748b}
 .study-note{color:#677486;font-size:.78rem;padding:.85rem 1.1rem;border-left:3px solid #a7bbcc;background:#f7f9fb}
-.topic-list{padding-left:1.2em}
-.topic-list li{margin:.5em 0}
+.topic-list{list-style:none;padding-left:0;margin-left:0}
+.topic-list li{margin:0;padding:.7rem 0;border-bottom:1px solid #e7ebf0}
 @media (max-width:620px){.study-grid{grid-template-columns:1fr}.study-intro{padding:1.15rem}}
 .topic-list a,.topic-list a:visited,.timeline-list a,.timeline-list a:visited{color:#222!important;text-decoration:none!important}
 .topic-list a:hover,.timeline-list a:hover{color:#5378a9!important}
