@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "261004 내장 함수"
+title: "7. 내장 함수"
 date: "2026-10-04 15:00:00 +0900"
 course_date: '2026-10-04'
 categories: [python]

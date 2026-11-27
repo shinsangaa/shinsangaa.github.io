@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "261004 예외 처리"
+title: "6. 예외 처리"
 date: "2026-10-04 15:00:00 +0900"
 course_date: '2026-10-04'
 categories: [python]

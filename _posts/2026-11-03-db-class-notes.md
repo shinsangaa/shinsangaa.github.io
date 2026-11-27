@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "2026-11-03 | 데이터베이스(DB) 수업 정리"
+title: "1. 데이터베이스(DB) 수업 정리"
 date: 2026-11-03 09:00:00 +0900
 course_date: '2026-11-03'
 categories: [data-engineering]

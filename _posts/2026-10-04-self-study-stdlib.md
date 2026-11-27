@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "261004 표준 라이브러리"
+title: "8. 표준 라이브러리"
 date: "2026-10-04 15:00:00 +0900"
 course_date: '2026-10-04'
 categories: [python]
