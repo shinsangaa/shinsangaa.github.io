@@ -4,7 +4,7 @@ title: "2026-11-03 | FastAPI 학습 정리"
 date: 2026-11-03 09:01:00 +0900
 course_date: '2026-11-03'
 categories: [class-notes]
-tags: [FastAPI, 백엔드, API]
+tags: ["FastAPI", "백엔드", "API"]
 series: "수업일지"
 toc: true
 toc_sticky: true

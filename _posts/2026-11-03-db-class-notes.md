@@ -3,8 +3,8 @@ layout: single
 title: "2026-11-03 | 데이터베이스(DB) 수업 정리"
 date: 2026-11-03 09:00:00 +0900
 course_date: '2026-11-03'
-categories: [class-notes]
-tags: [데이터베이스, DB]
+categories: [data-engineering]
+tags: ["데이터베이스"]
 series: "수업일지"
 toc: true
 toc_sticky: true

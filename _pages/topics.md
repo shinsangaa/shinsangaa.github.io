@@ -6,16 +6,16 @@ author_profile: true
 
 **학습 기록을 주제별**로 모았습니다.
 
+{% assign cat = site.categories["llm-agent"] | sort: "date" %}
+<h2 id="llm-agent">LLM 기초</h2>
+<ul class="topic-list">{% for p in cat %}<li><a href="{{ p.url | relative_url }}">{{ p.title }}</a> <small>{{ p.date | date: "%Y.%m.%d" }}</small></li>{% endfor %}</ul>
+
 {% assign cat = site.categories["python"] | sort: "date" %}
 <h2 id="python">Python 기초</h2>
 <ul class="topic-list">{% for p in cat %}<li><a href="{{ p.url | relative_url }}">{{ p.title }}</a> <small>{{ p.date | date: "%Y.%m.%d" }}</small></li>{% endfor %}</ul>
 
 {% assign cat = site.categories["data-analysis"] | sort: "date" %}
-<h2 id="data-analysis">데이터 분석</h2>
-<ul class="topic-list">{% for p in cat %}<li><a href="{{ p.url | relative_url }}">{{ p.title }}</a> <small>{{ p.date | date: "%Y.%m.%d" }}</small></li>{% endfor %}</ul>
-
-{% assign cat = site.categories["data-visualization"] | sort: "date" %}
-<h2 id="data-visualization">데이터 시각화</h2>
+<h2 id="data-analysis">데이터 분석 · 시각화</h2>
 <ul class="topic-list">{% for p in cat %}<li><a href="{{ p.url | relative_url }}">{{ p.title }}</a> <small>{{ p.date | date: "%Y.%m.%d" }}</small></li>{% endfor %}</ul>
 
 {% assign cat = site.categories["machine-learning"] | sort: "date" %}
@@ -26,8 +26,12 @@ author_profile: true
 <h2 id="deep-learning">딥러닝</h2>
 <ul class="topic-list">{% for p in cat %}<li><a href="{{ p.url | relative_url }}">{{ p.title }}</a> <small>{{ p.date | date: "%Y.%m.%d" }}</small></li>{% endfor %}</ul>
 
-{% assign cat = site.categories["llm-agent"] | sort: "date" %}
-<h2 id="llm-agent">LLM · AI 에이전트</h2>
+{% assign cat = site.categories["llm-service"] | sort: "date" %}
+<h2 id="llm-service">LLM 서비스 · 멀티 에이전트</h2>
+<ul class="topic-list">{% for p in cat %}<li><a href="{{ p.url | relative_url }}">{{ p.title }}</a> <small>{{ p.date | date: "%Y.%m.%d" }}</small></li>{% endfor %}</ul>
+
+{% assign cat = site.categories["data-engineering"] | sort: "date" %}
+<h2 id="data-engineering">DB · 빅데이터</h2>
 <ul class="topic-list">{% for p in cat %}<li><a href="{{ p.url | relative_url }}">{{ p.title }}</a> <small>{{ p.date | date: "%Y.%m.%d" }}</small></li>{% endfor %}</ul>
 
 {% assign cat = site.categories["projects"] | sort: "date" %}
