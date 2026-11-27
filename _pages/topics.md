@@ -42,6 +42,10 @@ author_profile: true
 <h3 id="study-notes">수업 메모 · 참고 키워드</h3>
 <ul class="topic-list">{% for p in cat %}<li><a href="{{ p.url | relative_url }}">{{ p.title }}</a></li>{% endfor %}</ul>
 
+{% assign cat = site.categories["error-notes"] | sort: "date" %}
+<h3 id="error-notes">오류 노트</h3>
+<ul class="topic-list">{% for p in cat %}<li><a href="{{ p.url | relative_url }}">{{ p.title }}</a></li>{% endfor %}</ul>
+
 {% assign cat = site.categories["reading"] | sort: "date" %}
 <h3 id="reading">뉴스 · 읽을거리</h3>
 <ul class="topic-list">{% for p in cat %}<li><a href="{{ p.url | relative_url }}">{{ p.title }}</a></li>{% endfor %}</ul>

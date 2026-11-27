@@ -2,7 +2,7 @@
 layout: single
 title: "csv Lib 라이브러리"
 date: "2026-09-29 15:00:00 +0900"
-categories: [data-analysis]
+categories: [error-notes]
 tags: ["데이터분석"]
 toc: true
 ---
