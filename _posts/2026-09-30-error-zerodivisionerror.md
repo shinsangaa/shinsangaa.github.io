@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "ZeroDivisionError 발생 경우"
+title: "ZeroDivisionError"
 date: "2026-09-30 15:00:00 +0900"
 categories: [error-notes]
 tags: ["Python"]

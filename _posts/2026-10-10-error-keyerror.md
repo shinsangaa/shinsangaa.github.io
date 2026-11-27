@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "261010 한국복지패널데이터분석 - KeyError"
+title: "한국복지패널데이터분석 - KeyError"
 date: "2026-10-10 15:00:00 +0900"
 categories: [error-notes]
 tags: ["데이터분석"]

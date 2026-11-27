@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "TypeError 발생 경우"
+title: "TypeError"
 date: "2026-09-29 15:00:00 +0900"
 categories: [error-notes]
 tags: ["Python"]

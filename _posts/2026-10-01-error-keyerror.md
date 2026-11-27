@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "KeyError 발생 경우"
+title: "KeyError"
 date: "2026-10-01 15:00:00 +0900"
 categories: [error-notes]
 tags: ["데이터분석"]

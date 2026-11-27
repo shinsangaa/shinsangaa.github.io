@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "ImportError 발생 경우"
+title: "ImportError"
 date: "2026-10-01 15:00:00 +0900"
 categories: [error-notes]
 tags: ["데이터분석"]
