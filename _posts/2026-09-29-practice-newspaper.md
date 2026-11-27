@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "4. 신문 배달을 하는 프로그램 작성"
-date: "2026-09-29 15:00:00 +0900"
+date: "2026-09-29 15:01:00 +0900"
 course_date: '2026-09-29'
 categories: [python]
 tags: ["Python"]

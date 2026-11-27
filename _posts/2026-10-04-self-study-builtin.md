@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "7. 내장 함수"
-date: "2026-10-04 15:00:00 +0900"
+date: "2026-10-04 15:01:00 +0900"
 course_date: '2026-10-04'
 categories: [python]
 tags: ["Python"]
