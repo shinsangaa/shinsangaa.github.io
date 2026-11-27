@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "260927 파이썬 입출력, 클래스"
-date: "2026-09-29 15:00:00 +0900"
+date: "2026-09-27 15:00:00 +0900"
 course_date: '2026-09-27'
 categories: [python]
 tags: ["Python"]
