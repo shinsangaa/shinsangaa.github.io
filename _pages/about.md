@@ -12,5 +12,3 @@ author_profile: true
 - **학습 연혁:** 2026년 9월부터 작성한 수업 및 과제 자료를 정리 중
 - **다른 기록:** [네이버 블로그](https://blog.naver.com/study-review)
 - **코드:** [GitHub](https://github.com/shinsangaa)
-
-> 학습일지의 출처 목록은 교수님 카페에 게시된 제목의 캡처 화면을 참고했습니다. 원문을 확인하지 못한 항목은 수업 내용을 임의로 재구성하지 않았습니다.

@@ -4,7 +4,7 @@ permalink: /topics/
 author_profile: true
 ---
 
-네이버에서 옮긴 **실제 학습 기록을 주제별**로 모았습니다. 한 게시글은 하나의 대표 분야에 배치했으며, 원문 내용과 이미지, 파일명은 그대로 유지했습니다.
+**학습 기록을 주제별**로 모았습니다.
 
 {% assign cat = site.categories["python"] | sort: "date" %}
 <h2 id="python">Python 기초</h2>

@@ -6,7 +6,7 @@ author_profile: true
 classes: wide
 ---
 
-공부한 날짜를 기준으로 **오래된 기록부터** 정리했습니다. 날짜 또는 글 제목을 클릭하면 해당 학습 노트가 열립니다.
+공부한 날짜를 기준으로 정리했습니다. 날짜 또는 글 제목을 클릭하면 해당 학습 노트가 열립니다.
 
 <ul style="list-style:none; padding-left:0; margin-left:0;">
 {% assign study_days = site.pages | where_exp: "item", "item.study_day" | sort: "study_day" %}
