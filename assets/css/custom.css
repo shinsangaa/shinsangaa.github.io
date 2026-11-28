@@ -15,3 +15,4 @@
 .topic-list a,.topic-list a:visited,.timeline-list a,.timeline-list a:visited{color:#222!important;text-decoration:none!important}
 .topic-list a:hover,.timeline-list a:hover{color:#5378a9!important}
 .study-intro>*:last-child{margin-bottom:0}
+.site-title{font-family:Consolas,Menlo,monospace}
