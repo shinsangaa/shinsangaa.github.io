@@ -1,6 +1,6 @@
 /* 사용자 정의 홈 페이지 스타일: Minimal Mistakes 테마 기반 */
 .study-intro {background:linear-gradient(135deg,#f4f7fb,#fafafa);border:1px solid #e5eaf0;border-radius:14px;padding:2rem 1.9rem;margin-bottom:2rem}
-.study-intro h1{font-size:clamp(1.6rem,3.5vw,2.6rem);line-height:1.35;letter-spacing:-.03em;margin-top:.45rem}
+.study-intro h1{font-size:clamp(1.6rem,3.5vw,2.6rem);line-height:1.35;letter-spacing:-.03em;margin-top:0}
 .study-intro>p:not(.study-kicker){color:#48566a;line-height:1.8}
 .study-kicker{font-size:.69rem;letter-spacing:.15em;color:#5378a9;font-weight:800}
 .study-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.65rem;margin:1.2rem 0 1.8rem}
@@ -14,3 +14,4 @@
 @media (max-width:620px){.study-grid{grid-template-columns:1fr}.study-intro{padding:1.15rem}}
 .topic-list a,.topic-list a:visited,.timeline-list a,.timeline-list a:visited{color:#222!important;text-decoration:none!important}
 .topic-list a:hover,.timeline-list a:hover{color:#5378a9!important}
+.study-intro>*:last-child{margin-bottom:0}
